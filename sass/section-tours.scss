@@ -1,0 +1,178 @@
+.section-tours {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  padding: 25rem 0 0 0;
+  margin-top: -17rem;
+
+  .section-tours__box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+
+    .section-tours__box1 {
+      width: 23.1%;
+      .card {
+        perspective: 150rem;
+        -moz-perspective: 150rem;
+        position: relative;
+
+        height: 45rem;
+
+        .card__side {
+          transition: all 0.8s ease;
+          height: 47rem;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          backface-visibility: hidden;
+          border-radius: 3px;
+          overflow: hidden;
+          box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+
+          &--front {
+            background-color: #fff;
+          }
+          &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+              background-image: linear-gradient(
+                to right bottom,
+                #ffb900,
+                #ff7730
+              );
+            }
+            &-2 {
+              background-image: linear-gradient(
+                to right bottom,
+                #7ed56f,
+                #28b485
+              );
+            }
+            &-3 {
+              background-image: linear-gradient(
+                to right bottom,
+                #2998ff,
+                #5643fa
+              );
+            }
+          }
+        }
+        &:hover .card__side--front {
+          transform: rotateY(-180deg);
+        }
+        &:hover .card__side--back {
+          transform: rotateY(0);
+        }
+      }
+      .card__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        &--1 {
+          background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+            url(/images/nat-5.jpg);
+        }
+        &--2 {
+          background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
+            url(/images/nat-6.jpg);
+        }
+        &--3 {
+          background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
+            url(/images/nat-7.jpg);
+        }
+      }
+      .card__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-align: right;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+      }
+      .card__heading-span {
+        // padding: 10rem 1, 5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &--1 {
+          background-image: linear-gradient(
+            to right bottom,
+            rgba(#ffb900, 0.85),
+            rgba(#ff7730, 0.85)
+          );
+        }
+        &--2 {
+          background-image: linear-gradient(
+            to right bottom,
+            rgba(#7ed56f, 0.85),
+            rgba(#28b485, 0.85)
+          );
+        }
+        &--3 {
+          background-image: linear-gradient(
+            to right bottom,
+            rgba(#2998ff, 0.85),
+            rgba(#5643fa, 0.85)
+          );
+        }
+      }
+      .card__details {
+        // padding: 3rem;
+        ul {
+          list-style: none;
+          width: 100%;
+          margin: 0 auto;
+          padding-left: 0;
+          li {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1rem;
+
+            &:not(:last-child) {
+              border-bottom: 1px solid #eee;
+            }
+          }
+        }
+      }
+      .card__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+
+        text-align: center;
+      }
+      .card__price-box {
+        text-align: center;
+        color: white;
+        margin-bottom: 8rem;
+      }
+      .card__price-only {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+      .card__price-value {
+        font-size: 6rem;
+        font-weight: 200;
+      }
+    }
+  }
+  .section-tours__button {
+    margin: 10rem;
+    btn {
+      color: white;
+      background-color: #55c57a;
+    }
+  }
+}

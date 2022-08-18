@@ -1,0 +1,140 @@
+.section-tours {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  padding: 25rem 0 0 0;
+  margin-top: -17rem;
+}
+.section-tours .section-tours__box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.section-tours .section-tours__box .section-tours__box1 {
+  width: 23.1%;
+}
+.section-tours .section-tours__box .section-tours__box1 .card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 45rem;
+}
+.section-tours .section-tours__box .section-tours__box1 .card .card__side {
+  transition: all 0.8s ease;
+  height: 47rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+.section-tours .section-tours__box .section-tours__box1 .card .card__side--front {
+  background-color: #fff;
+}
+.section-tours .section-tours__box .section-tours__box1 .card .card__side--back {
+  transform: rotateY(180deg);
+}
+.section-tours .section-tours__box .section-tours__box1 .card .card__side--back-1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.section-tours .section-tours__box .section-tours__box1 .card .card__side--back-2 {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+.section-tours .section-tours__box .section-tours__box1 .card .card__side--back-3 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+.section-tours .section-tours__box .section-tours__box1 .card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+.section-tours .section-tours__box .section-tours__box1 .card:hover .card__side--back {
+  transform: rotateY(0);
+}
+.section-tours .section-tours__box .section-tours__box1 .card__picture {
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.section-tours .section-tours__box .section-tours__box1 .card__picture--1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(/images/nat-5.jpg);
+}
+.section-tours .section-tours__box .section-tours__box1 .card__picture--2 {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(/images/nat-6.jpg);
+}
+.section-tours .section-tours__box .section-tours__box1 .card__picture--3 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(/images/nat-7.jpg);
+}
+.section-tours .section-tours__box .section-tours__box1 .card__heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-align: right;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+  width: 75%;
+}
+.section-tours .section-tours__box .section-tours__box1 .card__heading-span {
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.section-tours .section-tours__box .section-tours__box1 .card__heading-span--1 {
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+}
+.section-tours .section-tours__box .section-tours__box1 .card__heading-span--2 {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
+}
+.section-tours .section-tours__box .section-tours__box1 .card__heading-span--3 {
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
+}
+.section-tours .section-tours__box .section-tours__box1 .card__details ul {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+}
+.section-tours .section-tours__box .section-tours__box1 .card__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.section-tours .section-tours__box .section-tours__box1 .card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.section-tours .section-tours__box .section-tours__box1 .card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.section-tours .section-tours__box .section-tours__box1 .card__price-box {
+  text-align: center;
+  color: white;
+  margin-bottom: 8rem;
+}
+.section-tours .section-tours__box .section-tours__box1 .card__price-only {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.section-tours .section-tours__box .section-tours__box1 .card__price-value {
+  font-size: 6rem;
+  font-weight: 200;
+}
+.section-tours .section-tours__button {
+  margin: 10rem;
+}
+.section-tours .section-tours__button btn {
+  color: white;
+  background-color: #55c57a;
+}/*# sourceMappingURL=section-tours.css.map */
