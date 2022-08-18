@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-evenly;
   padding: 26rem 15rem;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.831372549), rgba(40, 180, 133, 0.7803921569)), url(/images/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.831372549), rgba(40, 180, 133, 0.7803921569)), url(../images/nat-4.jpg);
   background-size: cover;
   -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
           clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
